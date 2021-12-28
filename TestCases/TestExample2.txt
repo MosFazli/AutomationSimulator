@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Automata type="FA">
+<Alphabets numberOfAlphabets=2>
+<alphabet letter="a"/>
+<alphabet letter="b"/>
+</Alphabets>
+<States numberOfStates=4>
+<state name="q0" positionX=20 positionY=20/>
+<state name="q1" positionX=40 positionY=20/>
+<state name="q2" positionX=60 positionY=20/>
+<state name="q3" positionX=60 positionY=40/>
+<initialState name="q0"/>
+<FinalStates numberOfFinalStates=1>
+<finalState name="q1"/>
+</FinalStates>
+</States>
+<Transitions numberOfTrans=7>
+<transition name="tr1" source="q0" destination="q0" label="a"/>
+<transition name="tr2" source="q0" destination="q1" label="b"/>
+<transition name="tr3" source="q1" destination="q1" label="b"/>
+<transition name="tr4" source="q0" destination="q2" label="b"/>
+<transition name="tr5" source="q2" destination="q3" label="a"/>
+<transition name="tr6" source="q2" destination="q1" label="a"/>
+<transition name="tr7" source="q3" destination="q2" label="b"/>
+</Transitions>
+</Automata>

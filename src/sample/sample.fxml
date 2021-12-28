@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" style="-fx-background-color: #FAFAD2;" stylesheets="@ButtonStyle.css" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <BorderPane prefHeight="700.0" prefWidth="700.0">
+            <center>
+                <Pane prefHeight="600.0" prefWidth="684.0" BorderPane.alignment="CENTER" />
+            </center></BorderPane>
+      <VBox alignment="CENTER" prefHeight="779.0" prefWidth="700.0" spacing="20.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#load" styleClass="shiny-orange" stylesheets="@ButtonStyle.css" text="Load previous file" />
+                <Button fx:id="chooser" mnemonicParsing="false" onAction="#chooseFile" styleClass="shiny-orange" stylesheets="@ButtonStyle.css" text="Choose a file">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="About" mnemonicParsing="false" onAction="#aboutbtn" styleClass="shiny-orange" stylesheets="@ButtonStyle.css" text="About" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exit" styleClass="shiny-orange" stylesheets="@ButtonStyle.css" text="Exit" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </VBox>
+    </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</GridPane>
